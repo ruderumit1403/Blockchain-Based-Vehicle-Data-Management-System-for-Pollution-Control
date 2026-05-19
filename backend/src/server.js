@@ -13,5 +13,3 @@ app.use("/api", vehicleRoutes);
 app.listen(PORT, () => {
   console.log(`Vehicle ledger backend running on port ${PORT}`);
 });
-
-// Made with Bob

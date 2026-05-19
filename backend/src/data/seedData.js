@@ -72,5 +72,3 @@ export const seedVehicles = [
     blockchainLog: []
   }
 ];
-
-// Made with Bob

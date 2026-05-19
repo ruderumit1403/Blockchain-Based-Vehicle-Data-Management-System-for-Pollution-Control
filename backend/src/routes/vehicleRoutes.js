@@ -71,5 +71,3 @@ router.post("/vehicles/:vehicleNumber/insurance", (req, res) => {
 });
 
 export default router;
-
-// Made with Bob

@@ -210,5 +210,3 @@ class VehicleLedgerService {
 }
 
 export const vehicleLedgerService = new VehicleLedgerService();
-
-// Made with Bob
