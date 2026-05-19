@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1000" height="700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .box { fill: #ffffff; stroke: #2c3e50; stroke-width: 2; }
+      .header { fill: #3498db; stroke: #2c3e50; stroke-width: 2; }
+      .text { font-family: Arial, sans-serif; font-size: 14px; fill: #2c3e50; }
+      .title { font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; fill: #ffffff; }
+      .arrow { stroke: #e74c3c; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+      .label { font-family: Arial, sans-serif; font-size: 12px; fill: #e74c3c; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#e74c3c" />
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="500" y="30" text-anchor="middle" style="font-size: 24px; font-weight: bold; fill: #2c3e50;">
+    Blockchain Vehicle Tracking System Architecture
+  </text>
+  
+  <!-- Frontend Layer -->
+  <rect class="header" x="50" y="80" width="280" height="40" rx="5"/>
+  <text class="title" x="190" y="105" text-anchor="middle">Frontend Layer</text>
+  
+  <rect class="box" x="50" y="120" width="280" height="150" rx="5"/>
+  <text class="text" x="190" y="145" text-anchor="middle" font-weight="bold">React + Vite Dashboard</text>
+  <text class="text" x="70" y="175">• Vehicle Registration UI</text>
+  <text class="text" x="70" y="200">• Emission Update Forms</text>
+  <text class="text" x="70" y="225">• Compliance Dashboard</text>
+  <text class="text" x="70" y="250">• Vehicle Ledger View</text>
+  <text class="text" x="190" y="270" text-anchor="middle" style="font-size: 12px; fill: #7f8c8d;">Port: 5173</text>
+  
+  <!-- Backend Layer -->
+  <rect class="header" x="370" y="80" width="280" height="40" rx="5"/>
+  <text class="title" x="510" y="105" text-anchor="middle">Backend Layer</text>
+  
+  <rect class="box" x="370" y="120" width="280" height="150" rx="5"/>
+  <text class="text" x="510" y="145" text-anchor="middle" font-weight="bold">Node.js + Express API</text>
+  <text class="text" x="390" y="175">• RESTful API Endpoints</text>
+  <text class="text" x="390" y="200">• Vehicle Ledger Service</text>
+  <text class="text" x="390" y="225">• SHA-256 Event Chaining</text>
+  <text class="text" x="390" y="250">• In-Memory Data Store</text>
+  <text class="text" x="510" y="270" text-anchor="middle" style="font-size: 12px; color: #7f8c8d;">Port: 4000</text>
+  
+  <!-- Blockchain Layer -->
+  <rect class="header" x="690" y="80" width="280" height="40" rx="5"/>
+  <text class="title" x="830" y="105" text-anchor="middle">Blockchain Layer</text>
+  
+  <rect class="box" x="690" y="120" width="280" height="150" rx="5"/>
+  <text class="text" x="830" y="145" text-anchor="middle" font-weight="bold">Ethereum Smart Contract</text>
+  <text class="text" x="710" y="175">• Vehicle Registration</text>
+  <text class="text" x="710" y="200">• Emission Updates</text>
+  <text class="text" x="710" y="225">• Insurance Management</text>
+  <text class="text" x="710" y="250">• Compliance Verification</text>
+  <text class="text" x="830" y="270" text-anchor="middle" style="font-size: 12px; fill: #7f8c8d;">Solidity Contract</text>
+  
+  <!-- Data Storage -->
+  <rect class="header" x="370" y="320" width="280" height="40" rx="5"/>
+  <text class="title" x="510" y="345" text-anchor="middle">Data Storage</text>
+  
+  <rect class="box" x="370" y="360" width="130" height="100" rx="5"/>
+  <text class="text" x="435" y="385" text-anchor="middle" font-weight="bold">Blockchain</text>
+  <text class="text" x="390" y="410">• Immutable</text>
+  <text class="text" x="390" y="430">• Distributed</text>
+  <text class="text" x="390" y="450">• Transparent</text>
+  
+  <rect class="box" x="520" y="360" width="130" height="100" rx="5"/>
+  <text class="text" x="585" y="385" text-anchor="middle" font-weight="bold">IPFS</text>
+  <text class="text" x="540" y="410">• Certificates</text>
+  <text class="text" x="540" y="430">• Documents</text>
+  <text class="text" x="540" y="450">• Hash Storage</text>
+  
+  <!-- External Systems -->
+  <rect class="header" x="50" y="320" width="280" height="40" rx="5"/>
+  <text class="title" x="190" y="345" text-anchor="middle">External Systems</text>
+  
+  <rect class="box" x="50" y="360" width="130" height="100" rx="5"/>
+  <text class="text" x="115" y="385" text-anchor="middle" font-weight="bold">Authorities</text>
+  <text class="text" x="70" y="410">• RTO</text>
+  <text class="text" x="70" y="430">• Pollution Board</text>
+  <text class="text" x="70" y="450">• Regulators</text>
+  
+  <rect class="box" x="200" y="360" width="130" height="100" rx="5"/>
+  <text class="text" x="265" y="385" text-anchor="middle" font-weight="bold">Service Centers</text>
+  <text class="text" x="220" y="410">• Emission Tests</text>
+  <text class="text" x="220" y="430">• Maintenance</text>
+  <text class="text" x="220" y="450">• Inspections</text>
+  
+  <!-- Arrows -->
+  <!-- Frontend to Backend -->
+  <path class="arrow" d="M 330 195 L 370 195"/>
+  <text class="label" x="340" y="190">HTTP/REST</text>
+  
+  <!-- Backend to Blockchain -->
+  <path class="arrow" d="M 650 195 L 690 195"/>
+  <text class="label" x="655" y="190">Web3/ethers.js</text>
+  
+  <!-- Backend to Data Storage -->
+  <path class="arrow" d="M 510 270 L 510 320"/>
+  <text class="label" x="520" y="300">Store/Retrieve</text>
+  
+  <!-- External to Frontend -->
+  <path class="arrow" d="M 115 360 L 115 270"/>
+  <text class="label" x="125" y="320">Access</text>
+  
+  <path class="arrow" d="M 265 360 L 265 270"/>
+  <text class="label" x="275" y="320">Submit Data</text>
+  
+  <!-- Key Features Box -->
+  <rect class="box" x="50" y="520" width="920" height="150" rx="5"/>
+  <text class="text" x="510" y="545" text-anchor="middle" font-weight="bold" style="font-size: 16px;">Key Features</text>
+  
+  <text class="text" x="70" y="575" font-weight="bold">✓ Immutable Records:</text>
+  <text class="text" x="90" y="595">SHA-256 chained events ensure data integrity</text>
+  
+  <text class="text" x="350" y="575" font-weight="bold">✓ Real-time Compliance:</text>
+  <text class="text" x="370" y="595">Automated monitoring and alerts</text>
+  
+  <text class="text" x="630" y="575" font-weight="bold">✓ Transparency:</text>
+  <text class="text" x="650" y="595">All stakeholders can verify records</text>
+  
+  <text class="text" x="70" y="625" font-weight="bold">✓ Decentralized Storage:</text>
+  <text class="text" x="90" y="645">IPFS for document certificates</text>
+  
+  <text class="text" x="350" y="625" font-weight="bold">✓ Smart Contracts:</text>
+  <text class="text" x="370" y="645">Automated compliance verification</text>
+  
+  <text class="text" x="630" y="625" font-weight="bold">✓ Multi-stakeholder:</text>
+  <text class="text" x="650" y="645">Authorities, owners, service centers</text>
+</svg>
+
+<!-- Made with Bob -->
